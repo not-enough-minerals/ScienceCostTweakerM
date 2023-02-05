@@ -349,6 +349,7 @@ data:extend({
 -- military tech dependencies, based on settings
 if settings.startup["sct-military"].value == "tier2" then
 	sctm.tech_dependency_add("sct-military-science-pack", "sct-automation-science-pack")
+	sctm.tech_dependency_add("sct-military-science-pack", "advanced-electronics")
 else
 -- tier 3.5 -- after blue, but does not require t4 lab
 	sctm.tech_dependency_add("sct-military-science-pack", "chemical-science-pack")

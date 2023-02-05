@@ -45,7 +45,6 @@ if mods["bobtech"] then
 			{
 				"robotics",
 --				"chemical-science-pack",
-				"circuit-network",
 				"advanced-electronics-2"
 --				"sct-lab-t4",
 			},
@@ -63,6 +62,9 @@ if mods["bobtech"] then
 			order = "sct-pack-d[logistic]",
 		},
 	})
+  if not mods["bobelectronics"] then
+    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "circuit-network")
+  end
 
 	-- logistic pack items
 	data:extend ({
