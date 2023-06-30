@@ -283,10 +283,6 @@ data:extend({
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "sct-waste-processing-copper",
-			},
-			{
-				type = "unlock-recipe",
 				recipe = "sct-waste-processing-mixed",
 			},
 		},
