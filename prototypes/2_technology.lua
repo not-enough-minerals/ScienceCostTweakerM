@@ -1,5 +1,8 @@
 --require ("technologies.labs")
 --require ("technologies.sciencepacks")
+
+sctm.tech_dependency_add("rocket-silo", "electric-engine")
+
 scttechmap = 
 {
 -- vanilla

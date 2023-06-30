@@ -14,7 +14,7 @@ require("tweaks.omnimatter.2_final")
 
 require("tweaks.pymods.2_final")
 
--- Technolgoy map fix
+-- Technology map fix
 require("prototypes.2_technology")
 
 if (settings.startup["sct-difficulty-cost"].value ~= "noadjustment") then

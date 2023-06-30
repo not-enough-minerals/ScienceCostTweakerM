@@ -1,4 +1,9 @@
--- Check that bobsmod plates is installed
+if mods["bobelectronics"] or mods["boblogistics"] or mods["bobplates"] then
+  sctm.recipe_ingredient_remove("sct-t3-flash-fuel", "petroleum-gas")
+  sctm.recipe_ingredient_add("sct-t3-flash-fuel", {type="fluid", name="heavy-oil", amount=10}, {type="fluid", name="heavy-oil", amount=20})
+  sctm.recipe_ingredient_add("sct-t3-flash-fuel", {type="fluid", name="light-oil", amount=10}, {type="fluid", name="light-oil", amount=20})
+end
+
 if mods["bobplates"] then
 	-- Green Science Pack:
 	-- =============================
@@ -419,8 +424,10 @@ end
 
 if mods["boblogistics"] then
 	if settings.startup["bobmods-logistics-inserteroverhaul"] and settings.startup["bobmods-logistics-inserteroverhaul"].value then
+    sctm.tech_dependency_remove("sct-lab-t2", "fast-inserter")
 		if data.raw.recipe["yellow-filter-inserter"] then
 			sctm.recipe_ingredient_replace("sct-lab2-automatization", "fast-inserter", "yellow-filter-inserter")
+      sctm.tech_dependency_add("sct-lab-t2", "electronics")
 		else
 			sctm.recipe_ingredient_replace("sct-lab2-automatization", "fast-inserter", "inserter")
 		end
@@ -430,7 +437,9 @@ if mods["boblogistics"] then
 		sctm.tech_dependency_add("sct-lab-t4", "stack-inserter-2")
 	end
 	if settings.startup["bobmods-logistics-beltoverhaul"] and settings.startup["bobmods-logistics-beltoverhaul"].value then
-		 sctm.recipe_ingredient_replace("sct-lab1-mechanization", "transport-belt", "basic-transport-belt")
+    sctm.tech_dependency_remove("logistics", "sct-automation-science-pack")
+    sctm.tech_dependency_add("logistics-0", "sct-automation-science-pack")
+    sctm.recipe_ingredient_replace("sct-lab1-mechanization", "transport-belt", "basic-transport-belt")
 	end
 end
 

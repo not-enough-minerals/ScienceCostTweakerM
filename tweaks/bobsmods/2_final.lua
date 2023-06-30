@@ -8,11 +8,6 @@ if mods["bobtech"] then
 	sctm.recipe_ingredient_remove("utility-science-pack", "titanium-bearing")
 end
 
-if mods["boblogistics"] then
-	sctm.tech_pack_remove("logistics-3","production-science-pack")
-	sctm.tech_dependency_remove("logistics-3","production-science-pack")
-end
-
 if mods["bobplates"] then
 	sctm.recipe_ingredient_remove("chemical-science-pack", "bronze-alloy")
 	sctm.recipe_ingredient_remove("utility-science-pack", "lithium-ion-battery")
