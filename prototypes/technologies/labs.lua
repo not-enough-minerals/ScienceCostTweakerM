@@ -143,11 +143,14 @@ data:extend({
 				type = "unlock-recipe",
 				recipe = "sct-t3-sulfur-lightsource",
 			},
+      {
+        type = "unlock-recipe",
+        recipe = "sct-t3-flash-fuel",
+      },
 		},
 		prerequisites =
 		{
 --			"logistic-science-pack",
-			"oil-processing",
 			"solar-energy",
 			"plastics",
 			"sulfur-processing",
@@ -202,11 +205,10 @@ data:extend({
 		prerequisites =
 		{
 --			"chemical-science-pack",
---			"utility-sciencepack",
 			"advanced-electronics-2",
 			"uranium-processing",
 			"stack-inserter",
---			"rocket-silo"
+      "low-density-structure"
 		},
 		unit =
 		{

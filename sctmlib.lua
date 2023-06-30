@@ -497,18 +497,11 @@ end
 
 function sctm.tech_replace(oldtechname, newtechname)
 	local replaced = false
-	if (data.raw.technology[oldtechname] and data.raw.technology[newtechname]) then
+	if data.raw.technology[oldtechname] and data.raw.technology[newtechname] then
 		local oldtech = data.raw.technology[oldtechname]
 		local newtech = table.deepcopy(data.raw.technology[newtechname])
-		if (oldtech.prerequisites) then
-			for _, prereq in pairs(oldtech.prerequisites) do
-				if (not sctm.find_in_table(newtech.prerequisites, prereq)) then
-					local prereqsize = table_size(newtech.prerequisites)
-					newtech.prerequisites[prereqsize + 1] = prereq
-				end
-			end
-		end
-		if (oldtech.effects) then
+
+		if oldtech.effects then
 			for _, eff in pairs(oldtech.effects) do
 				if (not sctm.find_in_table(newtech.effects, eff)) then
 					local effectsize = table_size(newtech.effects)

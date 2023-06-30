@@ -177,7 +177,7 @@ data:extend({
 			ingredients = 
 			{
 				{"centrifuge", 2},
-				{"steel-plate", 20},
+				{"low-density-structure", 20},
 			},
 			result = "sct-lab4-construction",
 		},
@@ -188,7 +188,7 @@ data:extend({
 			ingredients = 
 			{
 				{"centrifuge", 1},
-				{"steel-plate", 5},
+				{"low-density-structure", 10},
 			},
 			result = "sct-lab4-construction",
 		},

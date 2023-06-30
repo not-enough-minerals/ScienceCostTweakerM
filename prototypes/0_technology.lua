@@ -4,3 +4,13 @@
 require("technologies.sciencepacks")
 require("technologies.labs")
 
+sctm.tech_dependency_add("automation", "sct-automation-science-pack")
+sctm.tech_dependency_add("optics", "sct-automation-science-pack")
+sctm.tech_dependency_add("gun-turret", "sct-automation-science-pack")
+sctm.tech_dependency_add("stone-wall", "sct-automation-science-pack")
+sctm.tech_dependency_add("military", "sct-automation-science-pack")
+sctm.tech_dependency_add("logistics", "sct-automation-science-pack")
+sctm.tech_dependency_add("steel-processing", "sct-automation-science-pack")
+
+sctm.tech_dependency_add("rocket-silo", "electric-engine")
+sctm.tech_dependency_add("logistics-3", "logistics-2")

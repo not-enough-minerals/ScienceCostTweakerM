@@ -113,6 +113,7 @@ data:extend({
 		prerequisites =
 		{
 			"sct-lab-t3",
+      "advanced-electronics"
 		},
 		unit =
 		{
@@ -233,7 +234,8 @@ data:extend({
 --			"chemical-science-pack",
 			"circuit-network",
 			"advanced-material-processing-2",
-			"advanced-electronics-2"
+			"advanced-electronics-2",
+      "advanced-oil-processing"
 --			"sct-lab-t4",
 		},
 		unit =
@@ -323,6 +325,9 @@ data:extend({
 		prerequisites =
 		{
 --			"sct-lab-s",
+      "rocket-silo",
+      "electric-energy-accumulators",
+      "solar-energy"
 		},
 		unit =
 		{

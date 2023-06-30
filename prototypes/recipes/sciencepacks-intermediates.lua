@@ -469,8 +469,7 @@ data:extend({
 			energy_required = 6,
 			ingredients =
 			{
-				{type="fluid", name="heavy-oil", amount=20},
-				{type="fluid", name="light-oil", amount=20},
+				{type="fluid", name="petroleum-gas", amount=40},
 				{type="item", name="steel-plate", amount=2}
 			},
 			results = 
@@ -484,48 +483,10 @@ data:extend({
 			energy_required = 3,
 			ingredients =
 			{
-				{type="fluid", name="heavy-oil", amount=10},
-				{type="fluid", name="light-oil", amount=10},
+				{type="fluid", name="petroleum-gas", amount=20},
 				{type="item", name="steel-plate", amount=1}
 			},
 			results = 
-			{
-				{type="item", name="sct-t3-flash-fuel", amount=1},
-			},
-		},
-	},
-
-	{
-		type = "recipe",
-		name = "sct-t3-flash-fuel2",
-		category = "chemistry",
-		always_show_made_in = true,
-		subgroup = "sct-sciencepack-3",
-		order = "f[t3]-c[flashfuel2]",
-		expensive =
-		{
-			enabled = false,
-			energy_required = 6,
-			ingredients =
-			{
-				{type="fluid", name="petroleum-gas", amount=200},
-				{type="item", name="steel-plate", amount=2}
-			},
-			results =
-			{
-				{type="item", name="sct-t3-flash-fuel", amount=1},
-			},
-		},
-		normal =
-		{
-			enabled = false,
-			energy_required = 3,
-			ingredients =
-			{
-				{type="fluid", name="petroleum-gas", amount=100},
-				{type="item", name="steel-plate", amount=1}
-			},
-			results =
 			{
 				{type="item", name="sct-t3-flash-fuel", amount=1},
 			},
