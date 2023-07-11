@@ -525,7 +525,7 @@ function sctm.tech_disable(techname)
 		for _i, tech in pairs(data.raw.technology) do
 			removed = sctm.tech_dependency_remove(_i, techname)
 			if removed then
-				sctm.log("removed " .. techname .. " dependency from " .. _i)
+				sctm.debug("removed " .. techname .. " dependency from " .. _i)
 			end
 		end
 		data.raw.technology[techname].enabled = false

@@ -46,5 +46,5 @@ if mods["bobtech"] then
 		},
 	})
 
-	sctm.tech_dependency_add("space-science-pack","sct-lab-lab2")
+	sctm.tech_dependency_add("space-science-pack", "sct-lab-lab2")
 end

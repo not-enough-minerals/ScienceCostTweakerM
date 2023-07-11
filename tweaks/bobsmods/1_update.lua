@@ -284,7 +284,9 @@ if mods["bobelectronics"] then
 end
 
 if mods["bobpower"] then
-  sctm.tech_dependency_add("steam-power", "sct-automation-science-pack")
+  if not mods["bobtech"] or not settings.startup["bobmods-burnerphase"].value then
+    sctm.tech_dependency_add("steam-power", "sct-automation-science-pack")
+  end
   
   if data.raw.item["solar-panel-large"] then
     sctm.recipe_ingredient_replace("sct-lab3-construction", "solar-panel", "solar-panel-large")
@@ -315,7 +317,7 @@ if mods["bobtech"] then
     data.raw.recipe["lab-2"].subgroup = "sct-labs"
     data.raw.recipe["lab-2"].order = "b[labs]-e[lab5]"
     sctm.recipe_ingredient_replace("lab-2", "lab", "sct-lab-t4")
-    sctm.lab_input_remove("sct-lab-t4","space-science-pack")
+    sctm.lab_input_remove("sct-lab-t4", "space-science-pack")
     if settings.startup["sct-lab-scaling"].value == true then
       data.raw.lab["lab-2"].researching_speed = 2
     else
@@ -357,6 +359,7 @@ if mods["bobtech"] then
     sctm.tech_dependency_remove("alien-research", "advanced-research")
     sctm.tech_pack_replace("alien-research", "automation-science-pack", "science-pack-gold")
     sctm.tech_pack_replace("alien-research", "logistic-science-pack", "alien-science-pack")
+    sctm.tech_pack_remove("alien-research", "military-science-pack")
     sctm.tech_pack_remove("alien-research", "chemical-science-pack")
   end
   if data.raw.tool["advanced-logistic-science-pack"] and  data.raw.recipe["advanced-logistic-science-pack"] then
@@ -397,6 +400,11 @@ if mods["bobtech"] then
   if data.raw.item["brass-chest"] then
     sctm.recipe_ingredient_replace("sct-logistic-automated-storage", "steel-chest", "brass-chest")
     sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "zinc-processing")
+  end
+  
+  if mods["bobelectronics"] and mods["bobplates"] then
+    sctm.tech_unlock_add("gold-processing", "gilded-copper-cable")
+    sctm.tech_unlock_remove("advanced-electronics-3", "gilded-copper-cable")
   end
 end
 
@@ -454,13 +462,15 @@ if mods["boblogistics"] then
     sctm.tech_dependency_add("sct-lab-t4", "stack-inserter-2")
   end
   if settings.startup["bobmods-logistics-beltoverhaul"] and settings.startup["bobmods-logistics-beltoverhaul"].value then
-    sctm.tech_dependency_remove("logistics", "sct-automation-science-pack")
-    sctm.tech_dependency_add("logistics-0", "sct-automation-science-pack")
+    if not (mods["bobtech"] and settings.startup["bobmods-burnerphase"].value) then
+      sctm.tech_dependency_remove("logistics", "sct-automation-science-pack")
+      sctm.tech_dependency_add("logistics-0", "sct-automation-science-pack")
+    end
     sctm.recipe_ingredient_replace("sct-lab1-mechanization", "transport-belt", "basic-transport-belt")
   end
 end
 
-if mods["bobtech"] and settings.startup["bobmods-burnerphase"] then
+if mods["bobtech"] and settings.startup["bobmods-burnerphase"].value then
   if (data.raw.recipe["steam-science-pack"]) then
     data.raw.recipe["steam-science-pack"].subgroup = "sct-science-pack-0"   
   end
@@ -494,14 +504,46 @@ if mods["bobtech"] and settings.startup["bobmods-burnerphase"] then
     sctm.tech_pack_add("sct-lab-t1", {"steam-science-pack", 10})    
   end
   if (data.raw.recipe["burner-lab"]) then
-    data.raw.recipe["burner-lab"].subgroup = "sct-science-pack-0"
+    data.raw.recipe["burner-lab"].subgroup = "sct-labs"
   end
-  if (data.raw.lab["burner-lab"]) then
-    data.raw.lab["burner-lab"].subgroup = "sct-science-pack-0"
+  if (data.raw.item["burner-lab"]) then
+    data.raw.item["burner-lab"].subgroup = "sct-labs"
   end
 
   if (data.raw.technology["steam-automation"]) then
-    sctm.tech_dependency_remove("automation","basic-automation")
-    sctm.tech_dependency_add("automation","steam-automation")
+    sctm.tech_dependency_remove("automation", "basic-automation")
+    sctm.tech_dependency_add("automation", "steam-automation")
   end
+
+  if (data.raw.technology["steam-automation"]) then
+    sctm.tech_dependency_remove("automation", "basic-automation")
+  end
+    
+elseif mods["bobassembly"] and settings.startup["bobmods-assembly-burner"].value then
+  sctm.tech_dependency_add("basic-automation", "sct-automation-science-pack")
+end
+
+if mods["bobrevamp"] then
+  if data.raw.item["silver-zinc-battery"] then
+    sctm.tech_dependency_remove("sct-space-science-pack", "electric-energy-accumulators")
+    sctm.tech_dependency_add("sct-space-science-pack", "battery-3")
+  end
+  if data.raw.item["rtg"] then
+    sctm.tech_dependency_remove("sct-space-science-pack", "solar-energy")
+    sctm.tech_dependency_add("sct-space-science-pack", "rtg")
+  end
+end
+
+if mods["bobmining"] then
+  if data.raw.technology["water-miner-1"] then
+    sctm.tech_dependency_add("water-miner-1", "sct-automation-science-pack")
+  end
+end
+
+if mods["bobgreenhouse"] then
+  sctm.tech_dependency_add("bob-greenhouse", "sct-automation-science-pack")
+end
+
+if mods["bobwarfare"] then
+  sctm.tech_dependency_add("sct-space-science-pack", "radars-5")
 end

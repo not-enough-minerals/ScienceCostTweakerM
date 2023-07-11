@@ -45,8 +45,7 @@ if mods["bobtech"] then
       {
         "robotics",
 --        "chemical-science-pack",
-        "advanced-electronics-2"
---        "sct-lab-t4",
+        "logistics-3"
       },
       unit =
       {
@@ -63,6 +62,11 @@ if mods["bobtech"] then
     },
   })
   if not mods["bobelectronics"] then
+    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "circuit-network")
+  elseif mods["bobplates"] then 
+    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "advanced-electronics-2")
+  else
+    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "advanced-electronics-2")
     sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "circuit-network")
   end
 
@@ -380,7 +384,44 @@ if mods["bobtech"] then
     })
   end
 
-  if mods["bobelectronics"] then
+  if not mods["bobelectronics"] then
+    data:extend({
+      {
+        type = "recipe",
+        name = "sct-logistic-memory-unit",
+        subgroup = "sct-advanced-logistic-science-pack",
+        order = "h_a[logistic]-e[memory-unit]",
+        expensive =
+        {
+          enabled = false,
+          energy_required = 4,
+          ingredients =
+          {
+            {"arithmetic-combinator", 2},
+            {"constant-combinator", 3},
+          },
+          results = 
+          {
+            {type="item", name="sct-logistic-memory-unit", amount=1},
+          },
+        },
+        normal =
+        {
+          enabled = false,
+          energy_required = 2,
+          ingredients =
+          {
+            {"arithmetic-combinator", 1},
+            {"constant-combinator", 2},
+          },
+          results = 
+          {
+            {type="item", name="sct-logistic-memory-unit", amount=1},
+          },
+        },
+      },
+    })
+  elseif mods["bobplates"] then
     data:extend({
       {
         type = "recipe",
@@ -432,7 +473,7 @@ if mods["bobtech"] then
           energy_required = 4,
           ingredients =
           {
-            {"arithmetic-combinator", 2},
+            {"intergrated-electronics", 4},
             {"constant-combinator", 3},
           },
           results = 
@@ -446,7 +487,7 @@ if mods["bobtech"] then
           energy_required = 2,
           ingredients =
           {
-            {"arithmetic-combinator", 1},
+            {"intergrated-electronics", 4},
             {"constant-combinator", 2},
           },
           results = 
