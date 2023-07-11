@@ -29,6 +29,9 @@ if mods["bobmodules"] then
     sctm.tech_unlock_remove("modules", "effectivity-processor")
     sctm.tech_unlock_remove("modules", "speed-processor")
     sctm.tech_unlock_remove("modules", "productivity-processor")
+    if mods["angelsbioprocessing"] then
+      sctm.tech_dependency_add("sct-lab-modules", "bio-processing-crystal-splinter-1")
+    end
   end
 end
 

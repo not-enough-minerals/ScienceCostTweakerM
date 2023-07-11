@@ -6,7 +6,9 @@
   "author": "mexmer, kingarthur",
   "dependencies": [
     "base >= 1.1.0",
-    "? angelsbioprocessing >= 0.7.24",
+    "? angelsbioprocessing",
+    "? angelsrefining",
+    "? angelssmelting",
     "? omnimatter_science >= 3.0.3",
     "? pycoalprocessing >= 1.2.0",
     "? bobtech",

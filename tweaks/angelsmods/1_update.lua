@@ -6,10 +6,5 @@ if mods["angelsbioprocessing"] then
   if mods["bobmodules"] and settings.startup["bobmods-modules-enable-modules-lab"] and settings.startup["bobmods-modules-enable-modules-lab"].value then
     sctm.lab_input_add("lab-module", "sct-bio-science-pack")
   end
-end
-
-if mods["angelssmelting"] then
-	if data.raw.item["brass-alloy"] then
-		sctm.recipe_ingredient_replace("sct-lab3-construction", "steel-plate", "brass-alloy")
-	end
+  sctm.tech_dependency_add("sct-lab-t3", "angels-oil-processing")
 end

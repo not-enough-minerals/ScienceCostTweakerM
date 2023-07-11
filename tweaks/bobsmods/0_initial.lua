@@ -14,3 +14,12 @@ if mods["bobtech"] then
     data.raw.tool["advanced-logistic-science-pack"].localised_name = nil
   end
 end
+
+if mods["bobplates"] then
+  -- Production Science Pack:
+  -- =============================
+  if data.raw.item["silicon"] then
+    sctm.recipe_ingredient_replace("sct-prod-biosilicate", "stone", {type="item", name="silicon", amount = 2})
+    sctm.tech_dependency_add("advanced-material-processing-2", "silicon-processing")
+  end
+end
