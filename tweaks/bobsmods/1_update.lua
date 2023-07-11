@@ -59,9 +59,10 @@ if mods["bobplates"] then
       sctm.tech_dependency_add("sct-lab-t3", "lead-processing")
     end
   end
-  
+
   if data.raw.item["glass"] then
     sctm.recipe_ingredient_replace("sct-t3-sulfur-lightsource", "plastic-bar", "glass")
+    sctm.tech_dependency_remove("sct-lab-t3", "plastics")
   end
 
   if data.raw.fluid["sulfur-dioxide"] then
@@ -95,6 +96,7 @@ if mods["bobplates"] then
     }
     if mods["angelssmelting"] then
       sctm.tech_dependency_add("sct-lab-t3", "angels-aluminium-smelting-1")
+      sctm.tech_dependency_add("sct-lab-t3", "angels-glass-smelting-1")
     else
       sctm.tech_dependency_add("sct-lab-t3", "aluminium-processing")
     end
