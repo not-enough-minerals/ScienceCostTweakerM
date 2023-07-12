@@ -1,6 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.0
 Date: ???
+  Changes:
+    - Simplified recipe for Sulfur lightsource
+    - Removed Sulfur lightsource from Blue science recipe
   Bugfixes:
     - Fixed compatibility with Bob's and Angel's mods
 ---------------------------------------------------------------------------------------------------
