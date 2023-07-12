@@ -141,5 +141,6 @@ data:extend({
 		order = "sct-pack-e[alien]",
 	},
 })
-sctm.tech_unlock_remove("alien-research","science-pack-gold")
+sctm.tech_unlock_remove("alien-research", "science-pack-gold")
+sctm.tech_unlock_remove("alien-research", "alien-science-pack")
 end

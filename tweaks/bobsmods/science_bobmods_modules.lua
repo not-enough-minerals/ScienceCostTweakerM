@@ -1,4 +1,4 @@
-if mods["bobmodules"]then
+if mods["bobmodules"] and settings.startup["bobmods-modules-enable-modules-lab"] and settings.startup["bobmods-modules-enable-modules-lab"].value then
 	-- technology
 	data:extend({
 		{

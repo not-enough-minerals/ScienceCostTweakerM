@@ -438,5 +438,5 @@ if settings.startup["sct-lab-scaling"].value == true then
 end
 
 if settings.startup["sct-military"].value == "tier2" then
-        sctm.lab_input_add("sct-lab-t2", "military-science-pack")
+  sctm.lab_input_add("sct-lab-t2", "military-science-pack")
 end

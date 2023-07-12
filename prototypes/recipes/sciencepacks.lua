@@ -103,26 +103,10 @@ data:extend(
 			name = "sct-chemical-science-pack",
 			subgroup = "sct-sciencepack-3",
 			order = "f[t3]-a[chemical-science-pack]",
---[[
-			expensive = {
-				enabled = false,
-				always_show_made_in = true,
-				ingredients = {
-					{"sct-t3-femto-lasers", 3},
-					{"sct-t3-atomic-sensors", 2}
-				},
-				results = {
-					{type = "item", amount = 1, name = "chemical-science-pack"}
-				},
-				energy_required = 30,
-				enabled = false
-			},
-]]--
 			normal = {
 				enabled = false,
 				always_show_made_in = true,
 				ingredients = {
-					{"sct-t3-sulfur-lightsource", 1},
 					{"sct-t3-femto-lasers", 1},
 					{"sct-t3-atomic-sensors", 1}
 				},

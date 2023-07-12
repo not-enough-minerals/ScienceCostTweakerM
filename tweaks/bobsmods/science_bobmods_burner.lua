@@ -1,5 +1,5 @@
-if mods["bobtech"] and settings.startup["bobmods-burnerphase"] and not data.raw["item-subgroup"]["sct-science-pack-0"] then
-    -- sicence group
+if mods["bobtech"] and settings.startup["bobmods-burnerphase"].value and not data.raw["item-subgroup"]["sct-science-pack-0"] then
+    -- science group
     data:extend ({
         {
             type = "item-subgroup",

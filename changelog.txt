@@ -1,11 +1,19 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: ???
+  Changes:
+    - Simplified recipe for Sulfur lightsource
+    - Removed Sulfur lightsource from Blue science recipe
+  Bugfixes:
+    - Fixed compatibility with Bob's and Angel's mods
+---------------------------------------------------------------------------------------------------
 Version: 1.1.10
 Date: 25.6.2021
   Changes:
     - replaced cobalt with brass in t3 lab when angel smelting loaded (upcoming angels change)
     - removed legacy sp dependency from labs
   Bugfixes:
-    - fixed science pack connection algorithm (should now do only meaningfull connection)
+    - fixed science pack connection algorithm (should now do only meaningful connection)
     - fixed missing dependency check for bobtech in alienlab tech
     - fixed flash fuel recipe hiding (petroleum variant only when not heavy oil)
 ---------------------------------------------------------------------------------------------------
