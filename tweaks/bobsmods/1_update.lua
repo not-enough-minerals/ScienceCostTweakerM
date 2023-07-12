@@ -355,7 +355,18 @@ if mods["bobtech"] then
         icon = "__ScienceCostTweakerM__/graphics/overlays/beta-64.png",
         icon_size = 64,
       },
-    }   
+    }
+    data.raw.lab["lab-alien"].icons =
+    {
+      {
+        icon_size = 64,
+        icon = "__ScienceCostTweakerM__/graphics/bobmods/alien-lab-64.png",
+      },
+      {
+        icon_size = 64,
+        icon = "__ScienceCostTweakerM__/graphics/overlays/alien-64.png",
+      },
+    }
     data.raw.recipe["lab-2"].subgroup = "sct-labs"
     data.raw.recipe["lab-2"].order = "b[labs]-e[lab5]"
     sctm.recipe_ingredient_replace("lab-2", "lab", "sct-lab-t4")
