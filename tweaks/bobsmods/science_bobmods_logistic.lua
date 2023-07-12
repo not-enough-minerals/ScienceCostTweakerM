@@ -43,9 +43,7 @@ if mods["bobtech"] then
       },
       prerequisites =
       {
-        "robotics",
---        "chemical-science-pack",
-        "logistics-3"
+--        "chemical-science-pack"
       },
       unit =
       {
@@ -382,6 +380,8 @@ if mods["bobtech"] then
         },
       },
     })
+    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "robotics")
+    sctm.tech_dependency_add("sct-advanced-logistic-science-pack", "logistics-3")
   end
 
   if not mods["bobelectronics"] then

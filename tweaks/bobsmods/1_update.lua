@@ -2,6 +2,23 @@ if mods["bobelectronics"] or mods["boblogistics"] or mods["bobplates"] then
   sctm.recipe_ingredient_remove("sct-t3-flash-fuel", "petroleum-gas")
   sctm.recipe_ingredient_add("sct-t3-flash-fuel", {type="fluid", name="heavy-oil", amount=10}, {type="fluid", name="heavy-oil", amount=20})
   sctm.recipe_ingredient_add("sct-t3-flash-fuel", {type="fluid", name="light-oil", amount=10}, {type="fluid", name="light-oil", amount=20})
+  sctm.tech_dependency_remove("sct-production-science-pack", "advanced-oil-processing")
+end
+
+if mods["boblibrary"] then
+  if data.raw["recipe-category"]["electronics"] then
+    bobmods.lib.recipe.set_category("sct-t2-instruments", "electronics")
+    bobmods.lib.recipe.set_category("sct-t2-wafer-stamp", "electronics")
+    bobmods.lib.recipe.set_category("sct-mil-circuit1", "electronics")
+    bobmods.lib.recipe.set_category("sct-mil-circuit2", "electronics")
+    bobmods.lib.recipe.set_category("sct-mil-circuit3", "electronics")
+    bobmods.lib.recipe.set_category("sct-prod-bioprocessor", "electronics")
+  end
+
+  if data.raw["recipe-category"]["electronics-with-fluid"] then
+    bobmods.lib.recipe.set_category("sct-prod-overclocker", "electronics-with-fluid")
+    bobmods.lib.recipe.set_category("sct-prod-chipcase", "electronics-with-fluid")
+  end
 end
 
 if mods["bobplates"] then
@@ -147,7 +164,11 @@ if mods["bobplates"] then
   if data.raw.item["brass-alloy"] then
     sctm.recipe_ingredient_replace("sct-mil-subplating", "copper-plate", { type="item", name="brass-alloy", amount = 0})
     sctm.recipe_ingredient_replace("sct-mil-plating", "copper-plate", { type="item", name="brass-alloy", amount = 0})
-    sctm.tech_dependency_add("sct-military-science-pack", "zinc-processing")
+    if mods["angelssmelting"] then
+      sctm.tech_dependency_add("sct-military-science-pack", "angels-brass-smelting-1")
+    else
+      sctm.tech_dependency_add("sct-military-science-pack", "zinc-processing")
+    end
   end
 
   if data.raw.item["carbon"] then
@@ -226,6 +247,11 @@ if mods["bobplates"] then
       sctm.tech_pack_add("sct-lab-t4", {"production-science-pack", 1})
       sctm.tech_pack_add("sct-utility-science-pack", {"production-science-pack", 1})
       sctm.tech_unlock_remove("sct-utility-science-pack", "sct-waste-processing-mixed")
+      
+      if data.raw.item["advanced-processing-unit"] then
+        sctm.recipe_ingredient_replace("sct-lab4-manipulators", "processing-unit", "advanced-processing-unit")
+        sctm.tech_dependency_add("sct-lab-t4", "advanced-electronics-3")
+      end
     end
   end
 
@@ -275,6 +301,7 @@ if mods["bobelectronics"] then
   sctm.tech_dependency_add("sct-lab-t2", "electronics")
   if settings.startup["sct-military"].value == "tier2" then
     sctm.recipe_ingredient_replace("sct-mil-circuit3", "advanced-circuit", "electronic-circuit")
+    sctm.tech_dependency_remove("sct-military-science-pack", "advanced-electronics")
   end
   if data.raw.item["basic-circuit-board"] then
     sctm.recipe_ingredient_replace("sct-t2-instruments", "electronic-circuit", "basic-circuit-board")

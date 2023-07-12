@@ -5,7 +5,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "sct-waste-processing-copper",
-		category = "crafting-with-fluid",
+		category = "advanced-crafting",
 		icon = "__ScienceCostTweakerM__/graphics/icons/sct-waste-copperonly.png",
 		icon_size = 32,
 		subgroup = "sct-byproducts",
@@ -62,7 +62,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "sct-waste-processing-mixed",
-		category = "crafting-with-fluid",
+		category = "advanced-crafting",
 		icon = "__ScienceCostTweakerM__/graphics/icons/sct-waste-ironcopper.png",
 		icon_size = 32,
 		subgroup = "sct-byproducts",
@@ -1130,7 +1130,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "sct-htech-capbank",
-		category = "crafting-with-fluid",
+		category = "advanced-crafting",
 		subgroup = "sct-sciencepack-hightech",
 		order = "i[ht]-b[capbank]",
 		expensive =
@@ -1172,7 +1172,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "sct-htech-injector",
-		category = "crafting-with-fluid",
+		category = "advanced-crafting",
 		subgroup = "sct-sciencepack-hightech",
 		order = "i[ht]-c[injector]",
 		expensive =
