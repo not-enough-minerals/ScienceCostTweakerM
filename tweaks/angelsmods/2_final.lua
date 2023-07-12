@@ -18,4 +18,8 @@ if mods["angelsbioprocessing"] then
 		end
 	end
 end
-	
+
+if mods["angelsindustries"] and angelsmods.industries.components then
+  sctm.recipe_ingredient_replace("sct-htech-capbank", "steel-gear-wheel", {name = "grate-steel", amount = 5})
+  sctm.recipe_ingredient_replace("sct-htech-random", "titanium-gear-wheel", "angels-spring")
+end

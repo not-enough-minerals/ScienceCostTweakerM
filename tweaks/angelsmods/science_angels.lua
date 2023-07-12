@@ -262,4 +262,5 @@ if mods["angelsbioprocessing"] then
 			order = "sct-pack-b[bio]",
 		},
 	})
+  angelsmods.functions.allow_productivity("sct-bio-science-pack")
 end

@@ -113,6 +113,7 @@ data:extend({
 		prerequisites =
 		{
 			"sct-lab-t3",
+      "advanced-electronics"
 		},
 		unit =
 		{
@@ -233,7 +234,8 @@ data:extend({
 --			"chemical-science-pack",
 			"circuit-network",
 			"advanced-material-processing-2",
-			"advanced-electronics-2"
+			"advanced-electronics-2",
+      "advanced-oil-processing"
 --			"sct-lab-t4",
 		},
 		unit =
@@ -283,10 +285,6 @@ data:extend({
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "sct-waste-processing-copper",
-			},
-			{
-				type = "unlock-recipe",
 				recipe = "sct-waste-processing-mixed",
 			},
 		},
@@ -327,6 +325,9 @@ data:extend({
 		prerequisites =
 		{
 --			"sct-lab-s",
+      "rocket-silo",
+      "electric-energy-accumulators",
+      "solar-energy"
 		},
 		unit =
 		{
@@ -348,7 +349,7 @@ data:extend({
 
 -- military tech dependencies, based on settings
 if settings.startup["sct-military"].value == "tier2" then
-	sctm.tech_dependency_add("sct-military-science-pack", "sct-automation-science-pack")
+	sctm.tech_dependency_add("sct-military-science-pack", "advanced-electronics")
 else
 -- tier 3.5 -- after blue, but does not require t4 lab
 	sctm.tech_dependency_add("sct-military-science-pack", "chemical-science-pack")

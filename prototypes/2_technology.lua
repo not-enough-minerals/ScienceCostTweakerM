@@ -1,5 +1,8 @@
 --require ("technologies.labs")
 --require ("technologies.sciencepacks")
+
+sctm.tech_dependency_add("rocket-silo", "electric-engine")
+
 scttechmap = 
 {
 -- vanilla
@@ -150,9 +153,6 @@ sctm.tech_replace("utility-science-pack", "sct-utility-science-pack")
 sctm.tech_replace("space-science-pack", "sct-space-science-pack")
 --bob mods
 sctm.tech_replace("advanced-logistic-science-pack", "sct-advanced-logistic-science-pack")
-
-sctm.tech_dependency_remove("chemical-science-pack","automation-2")
-sctm.tech_dependency_remove("chemical-science-pack","advanced-material-processing-2")
 
 if settings.startup["sct-connect-science"] and settings.startup["sct-connect-science"].value == true then
 	sctm.log("science connect started")

@@ -5,7 +5,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "sct-waste-processing-copper",
-		category = "crafting-with-fluid",
+		category = "advanced-crafting",
 		icon = "__ScienceCostTweakerM__/graphics/icons/sct-waste-copperonly.png",
 		icon_size = 32,
 		subgroup = "sct-byproducts",
@@ -62,7 +62,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "sct-waste-processing-mixed",
-		category = "crafting-with-fluid",
+		category = "advanced-crafting",
 		icon = "__ScienceCostTweakerM__/graphics/icons/sct-waste-ironcopper.png",
 		icon_size = 32,
 		subgroup = "sct-byproducts",
@@ -469,8 +469,7 @@ data:extend({
 			energy_required = 6,
 			ingredients =
 			{
-				{type="fluid", name="heavy-oil", amount=20},
-				{type="fluid", name="light-oil", amount=20},
+				{type="fluid", name="petroleum-gas", amount=40},
 				{type="item", name="steel-plate", amount=2}
 			},
 			results = 
@@ -484,48 +483,10 @@ data:extend({
 			energy_required = 3,
 			ingredients =
 			{
-				{type="fluid", name="heavy-oil", amount=10},
-				{type="fluid", name="light-oil", amount=10},
+				{type="fluid", name="petroleum-gas", amount=20},
 				{type="item", name="steel-plate", amount=1}
 			},
 			results = 
-			{
-				{type="item", name="sct-t3-flash-fuel", amount=1},
-			},
-		},
-	},
-
-	{
-		type = "recipe",
-		name = "sct-t3-flash-fuel2",
-		category = "chemistry",
-		always_show_made_in = true,
-		subgroup = "sct-sciencepack-3",
-		order = "f[t3]-c[flashfuel2]",
-		expensive =
-		{
-			enabled = false,
-			energy_required = 6,
-			ingredients =
-			{
-				{type="fluid", name="petroleum-gas", amount=200},
-				{type="item", name="steel-plate", amount=2}
-			},
-			results =
-			{
-				{type="item", name="sct-t3-flash-fuel", amount=1},
-			},
-		},
-		normal =
-		{
-			enabled = false,
-			energy_required = 3,
-			ingredients =
-			{
-				{type="fluid", name="petroleum-gas", amount=100},
-				{type="item", name="steel-plate", amount=1}
-			},
-			results =
 			{
 				{type="item", name="sct-t3-flash-fuel", amount=1},
 			},
@@ -656,38 +617,6 @@ data:extend({
 		},
 	},
 	
-	{
-		type = "recipe",
-		name = "sct-t3-sulfur-lightsource",
-		category = "chemistry",
-		subgroup = "sct-sciencepack-3",
-		order = "f[t3]-g[sulfur-lightsource]",
-		expensive = 
-		{
-			energy_required = 5,
-			enabled = false,
-			ingredients = {
-				{ "sulfur", 5 },
-				{ "plastic-bar", 5 },
-				{ "sct-t2-reaction-nodes", 3},
-				{ "sct-t2-microcircuits", 3},
-			},
-			result = "sct-t3-sulfur-lightsource",
-		},
-		normal = 
-		{
-			energy_required = 5,
-			enabled = false,
-			ingredients = {
-				{ "sulfur", 2 },
-				{ "plastic-bar", 2 },
-				{ "sct-t2-reaction-nodes", 2},
-				{ "sct-t2-microcircuits", 2},
-			},
-			result = "sct-t3-sulfur-lightsource",
-		},
-	},
-
 	-- Military Intermediary products.
 	-- =============================
 	{
@@ -1169,7 +1098,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "sct-htech-capbank",
-		category = "crafting-with-fluid",
+		category = "advanced-crafting",
 		subgroup = "sct-sciencepack-hightech",
 		order = "i[ht]-b[capbank]",
 		expensive =
@@ -1211,7 +1140,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "sct-htech-injector",
-		category = "crafting-with-fluid",
+		category = "advanced-crafting",
 		subgroup = "sct-sciencepack-hightech",
 		order = "i[ht]-c[injector]",
 		expensive =

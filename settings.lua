@@ -57,17 +57,7 @@ data:extend({
 		name = "sct-connect-science",
 		order = "sct-h[connect]",
 		setting_type = "startup",
-		default_value = true,
-	},
-
---[[
-	{
-		type = "bool-setting",
-		name = "sct-othermod-tweaks",
-		order = "sct-i[othermod]",
-		setting_type = "startup",
 		default_value = false,
-	},
-	]]--
+	}
 
 })
