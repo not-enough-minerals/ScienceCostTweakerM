@@ -165,6 +165,31 @@ data:extend({
 			result = "sct-lab3-optics",
 		},
 	},
+
+	{
+		type = "recipe",
+		name = "sct-t3-sulfur-lightsource",
+		expensive = 
+		{
+			energy_required = 5,
+			enabled = false,
+			ingredients = {
+				{ "sulfur", 5 },
+				{ "plastic-bar", 5 },
+			},
+			result = "sct-t3-sulfur-lightsource",
+		},
+		normal = 
+		{
+			energy_required = 5,
+			enabled = false,
+			ingredients = {
+				{ "sulfur", 2 },
+				{ "plastic-bar", 2 },
+			},
+			result = "sct-t3-sulfur-lightsource",
+		},
+	},
 	
 	-- lab4 intermediates
 	{

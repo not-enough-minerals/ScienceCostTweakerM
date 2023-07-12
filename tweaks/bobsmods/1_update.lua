@@ -82,10 +82,6 @@ if mods["bobplates"] then
     sctm.tech_dependency_remove("sct-lab-t3", "plastics")
   end
 
-  if data.raw.fluid["sulfur-dioxide"] then
-    sctm.recipe_ingredient_replace("sct-t3-sulfur-lightsource", "sulfur", {type="fluid", name="sulfur-dioxide", amount=20}, "sulfur", {type="fluid", name="sulfur-dioxide", amount=50})
-  end
-
   if data.raw.item["glass"] and data.raw.item["aluminium-plate"] then
     data.raw.recipe["sct-t3-laser-emitter"].normal.ingredients =
     {

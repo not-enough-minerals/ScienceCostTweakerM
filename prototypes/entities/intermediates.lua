@@ -148,25 +148,6 @@ data:extend({
     stack_size = 200
   },
 
-  {
-    type = "item",
-    name = "sct-t3-sulfur-lightsource",
-    icons =
-    {
-      {
-        icon_size = 64,
-        icon = "__ScienceCostTweakerM__/graphics/icons/sct-t3-sulfur-lightsource-64.png",
-      },
-      {
-        icon_size = 64,
-        icon = "__ScienceCostTweakerM__/graphics/overlays/3-64.png",
-      },
-    },
-    subgroup = "sct-labparts",
-    order = "b[labparts]-c[lab3]-c[sle]",
-    stack_size = 10,
-  },
-
   -- Military Intermediary products.
   -- =============================
   {
@@ -482,6 +463,26 @@ data:extend({
     icon = "__ScienceCostTweakerM__/graphics/icons/sct-lab3-optics.png",
     subgroup = "sct-labparts",
     order = "b[labparts]-c[lab3]-c[optics]",
+    stack_size = 10,
+  },
+
+  -- Sulfur lightsource
+  {
+    type = "item",
+    name = "sct-t3-sulfur-lightsource",
+    icons =
+    {
+      {
+        icon_size = 64,
+        icon = "__ScienceCostTweakerM__/graphics/icons/sct-t3-sulfur-lightsource-64.png",
+      },
+      {
+        icon_size = 64,
+        icon = "__ScienceCostTweakerM__/graphics/overlays/3-64.png",
+      },
+    },
+    subgroup = "sct-labparts",
+    order = "b[labparts]-c[lab3]-c[sle]",
     stack_size = 10,
   },
 
