@@ -50,7 +50,7 @@ if mods["bobmodules"] and settings.startup["bobmods-modules-enable-modules-lab"]
 					{"automation-science-pack", 1},
 					{"logistic-science-pack", 1},
 				},
-				time = 3,
+				time = 30,
 			},
 			order = "sct-lab-c[modules]",
 		},

@@ -46,7 +46,7 @@ data:extend({
 				{"chemical-science-pack", 1},
 				{"military-science-pack", 1},
 			},
-			time = 3,
+			time = 30,
 		},
 		order = "sct-lab-d[alien]",
 	},

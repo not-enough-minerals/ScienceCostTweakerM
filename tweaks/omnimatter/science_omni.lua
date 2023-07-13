@@ -37,7 +37,7 @@ if mods["omnimatter_science"] and mods["omnimatter_crystal"] then
 					{"automation-science-pack", 1},
 					{"logistic-science-pack", 1},
 				},
-				time = 2,
+				time = 20,
 			},
 			order = "sct-pack-c[omni]",
 		},

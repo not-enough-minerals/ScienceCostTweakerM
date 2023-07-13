@@ -257,7 +257,7 @@ if mods["angelsbioprocessing"] then
 				{
 					{"automation-science-pack", 1},
 				},
-				time = 2,
+				time = 20,
 			},
 			order = "sct-pack-b[bio]",
 		},

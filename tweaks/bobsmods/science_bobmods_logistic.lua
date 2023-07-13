@@ -54,7 +54,7 @@ if mods["bobtech"] then
           {"logistic-science-pack", 1},
           {"chemical-science-pack", 1},
         },
-        time = 3,
+        time = 30,
       },
       order = "sct-pack-d[logistic]",
     },

@@ -40,7 +40,7 @@ data:extend({
 			{
 --				{"science-pack-0", 1},
 			},
-			time = 1,
+			time = 10,
 		},
 		order = "sct-lab-a[t1]",
 	},
@@ -89,7 +89,7 @@ data:extend({
 			{
 				{"automation-science-pack", 1},
 			},
-			time = 5,
+			time = 20,
 		},
 		order = "sct-lab-b[t2]",
 	},
@@ -163,7 +163,7 @@ data:extend({
 				{"automation-science-pack", 1},
 				{"logistic-science-pack", 1},
 			},
-			time = 10,
+			time = 30,
 		},
 		order = "sct-lab-c[t3]",
 	},
