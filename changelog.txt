@@ -4,6 +4,7 @@ Date: ???
   Changes:
     - Simplified recipe for Sulfur lightsource
     - Removed Sulfur lightsource from Blue science recipe
+    - Wire Shortcuts mod compatibility #85
   Bugfixes:
     - Fix bobs lab-2 icon #76
     - Fixed compatibility with Bob's and Angel's mods
