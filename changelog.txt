@@ -4,10 +4,13 @@ Date: ???
   Changes:
     - Simplified recipe for Sulfur lightsource
     - Removed Sulfur lightsource from Blue science recipe
-    - Wire Shortcuts mod compatibility #85
+    - Added Wire Shortcuts mod compatibility #85
   Bugfixes:
     - Fix bobs lab-2 icon #76
-    - Fixed compatibility with Bob's and Angel's mods
+    - Fixed blue science not being craftable with vanilla
+    - Fixed compatibility with AAI Industries
+    - Fixed compatibility with Angel's mods
+    - Fixed compatibility with Bob's mods
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.10
 Date: 25.6.2021

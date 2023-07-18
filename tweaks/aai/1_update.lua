@@ -5,9 +5,8 @@ if mods["aai-industry"] then
 		"basic-logistics",
 		"electricity",
 		"basic-fluid-handling",
-		"steam-power",
 		"electric-mining",
-		"electric-lab",
+    "fuel-processing",
 	}
 	if mods["omnimatter_water"] then
 		aaitech0[#aaitech0+1] = "omniwaste"
@@ -53,6 +52,11 @@ if mods["aai-industry"] then
 	end
 	sctm.tech_dependency_add("sct-lab-t1", "electricity")
 	sctm.recipe_ingredient_replace("sct-lab1-mechanization", "electronic-circuit", "electric-motor")
+  sctm.recipe_ingredient_add("lab", { type = "item", name = "burner-lab", amount = 1 } )
+
+  sctm.tech_dependency_add("sand-processing", "sct-automation-science-pack")
+  sctm.tech_dependency_add("toolbelt", "sct-automation-science-pack")
+
 
 	if not mods["boblogistics"] or not settings.startup["bobmods-logistics-beltoverhaul"] or not settings.startup["bobmods-logistics-beltoverhaul"].value then
 		sctm.tech_dependency_add("sct-lab-t1", "basic-logistics")
