@@ -1,2 +1,0 @@
-require("pyscience")
-require("pycontainer")

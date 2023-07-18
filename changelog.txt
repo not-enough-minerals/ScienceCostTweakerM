@@ -5,6 +5,7 @@ Date: ???
     - Simplified recipe for Sulfur lightsource
     - Removed Sulfur lightsource from Blue science recipe
     - Added Wire Shortcuts mod compatibility #85
+    - Removed Py mods compatibility
   Bugfixes:
     - Fix bobs lab-2 icon #76
     - Fixed blue science not being craftable with vanilla
