@@ -7,17 +7,17 @@ end
 
 if mods["boblibrary"] then
   if data.raw["recipe-category"]["electronics"] then
-    bobmods.lib.recipe.set_category("sct-t2-instruments", "electronics")
-    bobmods.lib.recipe.set_category("sct-t2-wafer-stamp", "electronics")
-    bobmods.lib.recipe.set_category("sct-mil-circuit1", "electronics")
-    bobmods.lib.recipe.set_category("sct-mil-circuit2", "electronics")
-    bobmods.lib.recipe.set_category("sct-mil-circuit3", "electronics")
-    bobmods.lib.recipe.set_category("sct-prod-bioprocessor", "electronics")
+    sctm.set_category("sct-t2-instruments", "electronics")
+    sctm.set_category("sct-t2-wafer-stamp", "electronics")
+    sctm.set_category("sct-mil-circuit1", "electronics")
+    sctm.set_category("sct-mil-circuit2", "electronics")
+    sctm.set_category("sct-mil-circuit3", "electronics")
+    sctm.set_category("sct-prod-bioprocessor", "electronics")
   end
 
   if data.raw["recipe-category"]["electronics-with-fluid"] then
-    bobmods.lib.recipe.set_category("sct-prod-overclocker", "electronics-with-fluid")
-    bobmods.lib.recipe.set_category("sct-prod-chipcase", "electronics-with-fluid")
+    sctm.set_category("sct-prod-overclocker", "electronics-with-fluid")
+    sctm.set_category("sct-prod-chipcase", "electronics-with-fluid")
   end
 end
 
@@ -236,7 +236,7 @@ if mods["bobplates"] then
       {type="item", name="powdered-tungsten", amount=40},
       {type="item", name="ruby-5", amount=1}
     }
-    sctm.tech_dependency_add("sct-lab-t4", "gem-processing-3")
+    sctm.tech_dependency_add("sct-lab-t4", "gem-processing-2")
     sctm.tech_dependency_add("sct-lab-t4", "titanium-processing")
     sctm.tech_dependency_add("sct-lab-t4", "tungsten-processing")
     if mods["angelsrefining"] then
