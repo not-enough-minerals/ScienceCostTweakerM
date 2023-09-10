@@ -10,7 +10,6 @@
     "? angelsrefining",
     "? angelssmelting",
     "? omnimatter_science >= 3.0.3",
-    "? pycoalprocessing >= 1.2.0",
     "? bobtech",
     "? aai-industry",
     "? omnimatter_energy" ],
