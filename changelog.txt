@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.0
-Date: ???
+Date: 10.9.2023
   Changes:
     - Simplified recipe for Sulfur lightsource #88
     - Removed Sulfur lightsource from Blue science recipe #88
@@ -9,9 +9,9 @@ Date: ???
   Bugfixes:
     - Fix bobs lab-2 icon #76
     - Fixed blue science not being craftable with vanilla #79
-    - Fixed compatibility with AAI Industries #81
+    - Fixed compatibility with AAI Industries #57 #72 #74 #81
     - Fixed compatibility with Angel's mods #84
-    - Fixed compatibility with Bob's mods #78 #83
+    - Fixed compatibility with Bob's mods #76 #77 #78 #83 #87
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.10
 Date: 25.6.2021
