@@ -1,6 +1,6 @@
 {
   "name": "ScienceCostTweakerM",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "factorio_version":"1.1",
   "title": "ScienceCostTweaker Mod (mexmer)",
   "author": "mexmer, kingarthur",
@@ -10,6 +10,7 @@
     "? angelsrefining",
     "? angelssmelting",
     "? omnimatter_science >= 3.0.3",
+    "? bobplates >= 1.2.0",
     "? bobtech",
     "? aai-industry",
     "? omnimatter_energy" ],
