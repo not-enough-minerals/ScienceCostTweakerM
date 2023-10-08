@@ -248,14 +248,14 @@ if mods["angelsbioprocessing"] then
 			{
 				"gardens",
 				"bio-paper-1",
-				"bio-farm-1",
 			},
 			unit =
 			{
 				count = 60,
 				ingredients = 
 				{
-					{"automation-science-pack", 1},
+					{ type = "item", name = "automation-science-pack", amount = 1 },
+					{ type = "item", name = "logistic-science-pack", amount = 1 },
 				},
 				time = 20,
 			},

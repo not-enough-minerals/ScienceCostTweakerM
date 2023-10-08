@@ -18,15 +18,6 @@ data:extend({
 	},
 
 	{
-		type = "string-setting",
-		name = "sct-bio",
-		order = "sct-c[biotoken]",
-		setting_type = "startup",
-		default_value = "tier2",
-		allowed_values =  {"tier2", "tier1"}
-	},
-
-	{
 		type = "bool-setting",
 		name = "sct-lab-scaling",
 		order = "sct-d[scaling]",
