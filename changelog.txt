@@ -1,8 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 3.11.2023
+  Bugfixes:
+    - removed #89
+    - added soft dependency on bob plates (load order)
+---------------------------------------------------------------------------------------------------
 Version: 1.2.1
 Date: 3.11.2023
   Changes:
     - added minimal compatibility with omnimatter energy mod #90 (@CerealSam)
+    - Updated compatibility with Bob's mods #89 (@kiwihawk)
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.0
 Date: 10.9.2023
