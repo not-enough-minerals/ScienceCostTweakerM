@@ -236,7 +236,7 @@ if mods["bobplates"] then
       {type="item", name="powdered-tungsten", amount=40},
       {type="item", name="ruby-5", amount=1}
     }
-    sctm.tech_dependency_add("sct-lab-t4", "gem-processing-2")
+    sctm.tech_dependency_add("sct-lab-t4", "gem-processing-3")
     sctm.tech_dependency_add("sct-lab-t4", "titanium-processing")
     sctm.tech_dependency_add("sct-lab-t4", "tungsten-processing")
     if mods["angelsrefining"] then
