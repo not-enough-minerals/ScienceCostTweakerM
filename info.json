@@ -2,8 +2,8 @@
   "name": "ScienceCostTweakerM",
   "version": "1.2.1",
   "factorio_version":"1.1",
-  "title": "ScienceCostTweaker Mod (mexmer)",
-  "author": "mexmer, kingarthur",
+  "title": "ScienceCostTweaker Mod M",
+  "author": "mexmer, kingarthur, kiwihawk",
   "dependencies": [
     "base >= 1.1.0",
     "? angelsbioprocessing",
