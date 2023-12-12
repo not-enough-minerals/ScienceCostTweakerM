@@ -232,7 +232,6 @@ if mods["angelsbioprocessing"] then
       {
         "gardens",
         "bio-paper-1",
-        "sct-lab-t2",
       },
       unit =
       {
