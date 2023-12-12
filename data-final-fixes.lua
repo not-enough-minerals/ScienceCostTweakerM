@@ -9,6 +9,7 @@ require("prototypes.2_recipe")
 -- tweaks for other mods
 require("tweaks.aai.2_final")
 require("tweaks.angelsmods.2_final")
+require("tweaks.Bio_Industries.2_final")
 require("tweaks.bobsmods.2_final")
 require("tweaks.omnimatter.2_final")
 
