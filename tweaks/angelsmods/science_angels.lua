@@ -63,22 +63,6 @@ if mods["angelsbioprocessing"] then
       name = "sct-bio-science-pack",
       subgroup = "sct-bio-science-pack",
       order = "d_a[bio]",
-      --[[
-      expensive =
-      {
-        enabled = false,
-        energy_required = 12.5,
-        ingredients =
-        {
-          {"sct-bio-ground-sample", 3},
-          {"token-bio", 2},
-        },
-        results = 
-        {
-          {type="item", name="sct-bio-science-pack", amount=1},
-        },
-      },
-      ]]--
       expensive =
       {
         enabled = false,
@@ -248,6 +232,7 @@ if mods["angelsbioprocessing"] then
       {
         "gardens",
         "bio-paper-1",
+        "sct-lab-t2",
       },
       unit =
       {
@@ -255,7 +240,6 @@ if mods["angelsbioprocessing"] then
         ingredients = 
         {
           { type = "item", name = "automation-science-pack", amount = 1 },
-          { type = "item", name = "logistic-science-pack", amount = 1 },
         },
         time = 20,
       },

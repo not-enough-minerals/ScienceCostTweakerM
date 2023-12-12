@@ -266,6 +266,9 @@ if mods["bobplates"] then
       {type="item", name="tungsten-plate", amount=40},
       {type="item", name="cobalt-steel-alloy", amount=40}
     }
+    if mods["angelssmelting"] then
+      sctm.tech_dependency_add("sct-utility-science-pack", "angels-cobalt-steel-smelting-1")
+    end
   end
   
   if data.raw.item["titanium-gear-wheel"] and data.raw.item["tungsten-gear-wheel"] then
