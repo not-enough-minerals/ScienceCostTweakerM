@@ -2,7 +2,7 @@ for index, force in pairs(game.forces) do
   force.reset_recipes()
   force.reset_technologies()
 
-  if  force.technologies["sct-lab-t1"] then
+  if force.technologies["sct-lab-t1"] then
 --    log(serpent.block(force.technologies["sct-lab-t1"]))
     if
       force.technologies["sct-lab-t1"].valid and 
