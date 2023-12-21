@@ -5,6 +5,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "sct-waste-processing-copper",
+		localised_name = { "recipe-name.sct-waste-processing-copper" },
 		category = "advanced-crafting",
 		icon = "__ScienceCostTweakerM__/graphics/icons/sct-waste-copperonly.png",
 		icon_size = 32,
