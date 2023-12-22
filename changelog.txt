@@ -3,6 +3,8 @@ Version: 1.2.3
 Date: ???
   Changes:
     - Added prefix to science pack names to make them easily searchable #92
+    - Compatibility with latest Bob's changes #93
+    - Compatibility with latest Angel's changes #94
   Bugfixes:
     - Fixed duplicate Purple Science recipe with Bio Industries mod #45
 ---------------------------------------------------------------------------------------------------
