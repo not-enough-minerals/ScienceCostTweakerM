@@ -133,6 +133,7 @@ if mods["aai-industry"] then
       expensive = 
       {
         enabled = true,
+        always_show_made_in = true,
         energy_required = 3,
         ingredients = 
         {
@@ -147,6 +148,7 @@ if mods["aai-industry"] then
       normal =
       {
         enabled = true,
+        always_show_made_in = true,
         energy_required = 3,
         ingredients = 
         {

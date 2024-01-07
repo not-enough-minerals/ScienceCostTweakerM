@@ -137,6 +137,7 @@ if mods["bobtech"] then
       expensive = 
       {
         enabled = false,
+        always_show_made_in = true,
         energy_required = 14,
         ingredients = 
         {
@@ -151,6 +152,7 @@ if mods["bobtech"] then
       normal = 
       {
         enabled = false,
+        always_show_made_in = true,
         energy_required = 14,
         ingredients = 
         {
