@@ -66,6 +66,7 @@ if mods["angelsbioprocessing"] then
       expensive =
       {
         enabled = false,
+        always_show_made_in = true,
         energy_required = 5,
         ingredients =
         {
@@ -80,6 +81,7 @@ if mods["angelsbioprocessing"] then
       normal =
       {
         enabled = false,
+        always_show_made_in = true,
         energy_required = 5,
         ingredients =
         {
