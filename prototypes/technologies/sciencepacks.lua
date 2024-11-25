@@ -113,7 +113,7 @@ data:extend({
 		prerequisites =
 		{
 			"sct-lab-t3",
-      "advanced-electronics"
+      "advanced-circuit"
 		},
 		unit =
 		{
@@ -234,7 +234,7 @@ data:extend({
 --			"chemical-science-pack",
 			"circuit-network",
 			"advanced-material-processing-2",
-			"advanced-electronics-2",
+			"processing-unit",
       "advanced-oil-processing"
 --			"sct-lab-t4",
 		},
@@ -349,7 +349,7 @@ data:extend({
 
 -- military tech dependencies, based on settings
 if settings.startup["sct-military"].value == "tier2" then
-	sctm.tech_dependency_add("sct-military-science-pack", "advanced-electronics")
+	sctm.tech_dependency_add("sct-military-science-pack", "advanced-circuit")
 else
 -- tier 3.5 -- after blue, but does not require t4 lab
 	sctm.tech_dependency_add("sct-military-science-pack", "chemical-science-pack")

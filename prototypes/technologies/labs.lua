@@ -205,9 +205,9 @@ data:extend({
 		prerequisites =
 		{
 --			"chemical-science-pack",
-			"advanced-electronics-2",
+			"processing-unit",
 			"uranium-processing",
-			"stack-inserter",
+			"bulk-inserter",
       "low-density-structure"
 		},
 		unit =
